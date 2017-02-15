@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>shopping</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+  	<servlet-name>regist</servlet-name>
+  	<servlet-class>com.yw.servlet.UserRegistServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>regist</servlet-name>
+  	<url-pattern>/regist</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>userLoginServlet</servlet-name>
+  	<servlet-class>com.yw.servlet.UserLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>userLoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>checkUser</servlet-name>
+  	<servlet-class>com.yw.servlet.UserCheckUname</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>checkUser</servlet-name>
+  	<url-pattern>/checkUser</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>addGwc</servlet-name>
+  	<servlet-class>com.yw.servlet.GwcAdd</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addGwc</servlet-name>
+  	<url-pattern>/addGwc</url-pattern>
+  </servlet-mapping>
+</web-app>
